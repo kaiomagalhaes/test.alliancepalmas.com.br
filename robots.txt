@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sheilamoraesterapeuta.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /_site/
+Disallow: /.jekyll-cache/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock 

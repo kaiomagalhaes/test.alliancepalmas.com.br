@@ -1,8 +1,11 @@
 ---
 layout: default
 title: "Como estabelecer limites saudáveis sem se sentir culpado"
-description: "Guia completo para estabelecer limites saudáveis em relacionamentos e vida pessoal"
+description: "Guia completo para estabelecer limites saudáveis em relacionamentos e vida pessoal. Aprenda a se respeitar e ensinar os outros a te respeitar."
+keywords: "limites saudáveis, assertividade, relacionamentos, autocuidado, terapia, comunicação assertiva, saúde mental"
 image: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80
+date: 2024-01-18
+author: "Sheila Moraes"
 ---
 
 "Você precisa aprender a dizer não" - quantas vezes você já ouviu isso? Mas a verdade é que estabelecer limites vai muito além de simplesmente dizer não. É sobre se respeitar e ensinar os outros a te respeitar também.

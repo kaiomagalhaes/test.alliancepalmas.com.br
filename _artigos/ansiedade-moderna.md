@@ -1,8 +1,11 @@
 ---
 layout: default
 title: "Ansiedade na era digital: como lidar com a sobrecarga de informações"
-description: "Como lidar com a ansiedade moderna causada pela sobrecarga de informações digitais"
+description: "Descubra como lidar com a ansiedade moderna causada pela sobrecarga de informações digitais. Dicas práticas e como a terapia pode ajudar você a encontrar equilíbrio."
+keywords: "ansiedade digital, sobrecarga de informações, ansiedade moderna, terapia ansiedade, saúde mental, estresse digital"
 image: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80
+date: 2024-01-15
+author: "Sheila Moraes"
 ---
 
 Vivemos em uma era onde a informação chega a nós em velocidade impressionante. Notificações, mensagens, emails, redes sociais - tudo isso pode criar uma sensação constante de urgência e sobrecarga. A ansiedade moderna é diferente da ansiedade que nossos avós conheciam.

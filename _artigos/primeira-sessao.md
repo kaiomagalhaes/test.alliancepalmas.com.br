@@ -1,8 +1,11 @@
 ---
 layout: default
 title: "Primeira sessão de terapia: o que esperar e como se preparar"
-description: "Tudo que você precisa saber sobre sua primeira sessão de terapia"
+description: "Tudo que você precisa saber sobre sua primeira sessão de terapia. Dicas práticas para se preparar e aproveitar ao máximo seu primeiro encontro."
+keywords: "primeira sessão terapia, como se preparar terapia, início terapia, psicoterapia, saúde mental, terapia goiânia"
 image: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80
+date: 2024-01-08
+author: "Sheila Moraes"
 ---
 
 Decidir buscar terapia é um passo corajoso. Mas a ansiedade sobre a primeira sessão pode ser paralisante. "O que vou falar?" "Como vou me sentir?" "Será que vai funcionar?" Essas são perguntas comuns e completamente normais.

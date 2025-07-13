@@ -1,8 +1,11 @@
 ---
 layout: default
 title: "Autocuidado: pequenos rituais para dias mais leves"
-description: "Rituais simples e práticos de autocuidado para melhorar sua saúde mental"
+description: "Descubra rituais simples e práticos de autocuidado para melhorar sua saúde mental. Dicas matinais e noturnas para transformar sua rotina e bem-estar."
+keywords: "autocuidado, saúde mental, rituais matinais, bem-estar, autocuidado emocional, terapia, mindfulness"
 image: https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80
+date: 2024-01-10
+author: "Sheila Moraes"
 ---
 
 Autocuidado não é luxo, é necessidade. Mas muitas vezes confundimos autocuidado com compras impulsivas ou tratamentos caros. Na verdade, os rituais mais poderosos são os mais simples e acessíveis.

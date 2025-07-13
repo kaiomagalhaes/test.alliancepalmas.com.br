@@ -1,8 +1,11 @@
 ---
 layout: default
 title: "Aromaterapia como aliada no controle da ansiedade"
-description: "Como usar óleos essenciais para controlar a ansiedade de forma natural"
+description: "Descubra como usar óleos essenciais para controlar a ansiedade de forma natural. Guia completo com blends específicos e técnicas de aplicação."
+keywords: "aromaterapia ansiedade, óleos essenciais, ansiedade natural, lavanda, bergamota, terapia holística, relaxamento"
 image: https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80
+date: 2024-01-12
+author: "Sheila Moraes"
 ---
 
 A aromaterapia é uma das formas mais antigas e naturais de cuidar da saúde emocional. Os óleos essenciais têm o poder de influenciar diretamente nosso sistema límbico - a parte do cérebro responsável pelas emoções e memórias.
