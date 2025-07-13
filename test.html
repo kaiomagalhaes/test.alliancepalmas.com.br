@@ -1,0 +1,42 @@
+---
+layout: default
+title: Test Page
+---
+
+<div style="padding: 2rem; text-align: center;">
+  <h1>Asset Loading Test</h1>
+  
+  <div style="margin: 2rem 0;">
+    <h2>CSS Test</h2>
+    <p style="background: var(--gradient-primary); color: white; padding: 1rem; border-radius: 8px;">
+      If you can see this with a purple gradient background, CSS is loading correctly.
+    </p>
+  </div>
+  
+  <div style="margin: 2rem 0;">
+    <h2>Font Awesome Test</h2>
+    <p>
+      <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+      <i class="fas fa-phone" style="font-size: 2rem; color: #007bff;"></i>
+      <i class="fas fa-envelope" style="font-size: 2rem; color: #e74c3c;"></i>
+    </p>
+    <p>If you can see the icons above, Font Awesome is loading correctly.</p>
+  </div>
+  
+  <div style="margin: 2rem 0;">
+    <h2>JavaScript Test</h2>
+    <p>Check the browser console for JavaScript loading messages.</p>
+    <button onclick="alert('JavaScript is working!')" style="background: var(--gradient-secondary); color: white; border: none; padding: 1rem 2rem; border-radius: 8px; cursor: pointer;">
+      Test JavaScript
+    </button>
+  </div>
+  
+  <div style="margin: 2rem 0;">
+    <h2>Current URL</h2>
+    <p id="current-url"></p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('current-url').textContent = window.location.href;
+</script> 

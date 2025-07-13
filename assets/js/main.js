@@ -1,5 +1,9 @@
+// Debug asset loading
+console.log('Main.js loaded successfully');
+
 // Menu toggle
 document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM loaded, initializing menu');
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('nav ul');
 
