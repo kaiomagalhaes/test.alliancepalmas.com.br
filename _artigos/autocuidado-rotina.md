@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: artigo
 title: "Autocuidado: pequenos rituais para dias mais leves"
 description: "Rituais simples e práticos de autocuidado para melhorar sua saúde mental"
 image: https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80

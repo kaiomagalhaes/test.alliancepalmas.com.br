@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="artigo-content">
+  <div class="container">
+    <header class="artigo-header">
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="artigo-description">{{ page.description }}</p>
+      {% endif %}
+    </header>
+    
+    <div class="artigo-body">
+      {{ content }}
+    </div>
+    
+    <footer class="artigo-footer">
+      <a href="/" class="btn-voltar">← Voltar ao início</a>
+    </footer>
+  </div>
+</article> 

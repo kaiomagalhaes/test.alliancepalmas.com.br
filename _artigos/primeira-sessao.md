@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: artigo
 title: "Primeira sessão de terapia: o que esperar e como se preparar"
 description: "Tudo que você precisa saber sobre sua primeira sessão de terapia"
 image: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: artigo
 title: "Ansiedade na era digital: como lidar com a sobrecarga de informações"
 description: "Como lidar com a ansiedade moderna causada pela sobrecarga de informações digitais"
 image: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80

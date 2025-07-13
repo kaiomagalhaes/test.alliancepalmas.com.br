@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: artigo
 title: "Como estabelecer limites saudáveis sem se sentir culpado"
 description: "Guia completo para estabelecer limites saudáveis em relacionamentos e vida pessoal"
 image: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80

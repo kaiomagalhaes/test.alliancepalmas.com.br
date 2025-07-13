@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: artigo
 title: "Aromaterapia como aliada no controle da ansiedade"
 description: "Como usar óleos essenciais para controlar a ansiedade de forma natural"
 image: https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80
