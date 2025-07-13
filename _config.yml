@@ -1,0 +1,52 @@
+title: Terapeuta Sheila Moraes
+description: Terapeuta dedicada a caminhar ao lado de quem deseja ressignificar o que já não serve mais
+email: contato@sheilamoraesterapeuta.com
+url: "https://sheilamoraesterapeuta.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  servicos:
+    output: true
+    permalink: /servicos/:name/
+  artigos:
+    output: true
+    permalink: /artigos/:name/
+  depoimentos:
+    output: true
+    permalink: /depoimentos/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "artigos"
+    values:
+      layout: "artigo"
+  - scope:
+      path: ""
+      type: "servicos"
+    values:
+      layout: "servico"
+  - scope:
+      path: ""
+      type: "depoimentos"
+    values:
+      layout: "depoimento"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

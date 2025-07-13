@@ -1,0 +1,79 @@
+---
+layout: default
+title: Início
+---
+
+<header id="inicio">
+  <div class="hero-content">
+    <h1>Como você está hoje?</h1>
+    <p>Às vezes, tudo que a gente precisa é de um espaço onde possamos simplesmente ser.</p>
+    <button class="btn" onclick="document.querySelector('#contato').scrollIntoView({behavior:'smooth'})">Agendar sessão</button>
+  </div>
+</header>
+
+<section id="sobre">
+  <div class="container">
+    <h2>Sobre</h2>
+    <div class="content">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" alt="Sheila Moraes">
+      <p>Sou <strong>Sheila Moraes</strong>, terapeuta, e me dedico a caminhar ao lado de quem deseja ressignificar o que já não serve mais. Acredito na transformação que nasce do encontro, do afeto e da escuta comprometida com o seu tempo e a sua verdade. Meu desejo é que você se sinta acolhido, visto e respeitado em sua história e tenho certeza de que, juntos, podemos construir novos caminhos na sua trajetória de vida.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" style="background:#fff;">
+  <div class="container">
+    <h2>Serviços</h2>
+    <div class="cards">
+      {% for servico in site.servicos %}
+      <div class="card">
+        <i class="{{ servico.icon }}"></i>
+        <h3>{{ servico.title }}</h3>
+        <p>{{ servico.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="artigos">
+  <div class="container">
+    <h2>Artigos</h2>
+    <div class="posts">
+      {% for artigo in site.artigos limit:3 %}
+      <div class="post">
+        <img src="{{ artigo.image }}" alt="{{ artigo.title }}">
+        <div class="info">
+          <h4>{{ artigo.title }}</h4>
+          <a href="{{ artigo.url }}" target="_blank">{{ artigo.link_text | default: "Ler mais" }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" style="background:#fff;">
+  <div class="container">
+    <h2>Depoimentos</h2>
+    {% for depoimento in site.depoimentos %}
+    <blockquote>
+      "{{ depoimento.content }}" 
+      <cite>— {{ depoimento.author }}</cite>
+    </blockquote>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <p>Preencha o formulário abaixo ou envie um e‑mail para <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="E‑mail" required>
+      <textarea name="message" placeholder="Como posso ajudar?" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
