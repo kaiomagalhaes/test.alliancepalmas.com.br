@@ -104,34 +104,24 @@ footer{background:var(--gradient-primary);color:#fff;text-align:center;padding:1
 /* Article Layout Styles */
 .artigo-content {
   padding: 6rem 1rem 4rem;
-  min-height: 100vh;
   background: var(--light);
 }
 
-.artigo-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid var(--primary);
+
+.artigo-content .artigo-header {
+  margin-bottom: 2rem;
+  background: none;
+  height: auto;
+  padding: 0;
+  position: static;
 }
 
-.artigo-header h1 {
+.artigo-content .artigo-header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.artigo-description {
-  font-size: 1.2rem;
-  color: var(--dark);
-  opacity: 0.8;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
+  color: var(--primary);
+  margin: 0;
+  line-height: 1.2;
 }
 
 .artigo-body {
@@ -181,6 +171,7 @@ footer{background:var(--gradient-primary);color:#fff;text-align:center;padding:1
   font-style: italic;
 }
 
+
 .artigo-footer {
   text-align: center;
   margin-top: 4rem;
@@ -197,12 +188,15 @@ footer{background:var(--gradient-primary);color:#fff;text-align:center;padding:1
   font-weight: 600;
   transition: 0.3s;
   display: inline-block;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-voltar:hover {
   background: var(--gradient-secondary);
   transform: translateY(-2px);
   color: #fff;
+  box-shadow: 0 4px 15px rgba(231,76,60,0.3);
 }
 
 @media(max-width:768px){
