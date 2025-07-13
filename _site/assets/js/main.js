@@ -18,4 +18,21 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-}); 
+});
+
+// Smooth scrolling function
+function scrollToSection(sectionId) {
+    // Check if we're on the homepage
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    } else {
+        // If we're on another page, navigate to homepage with section
+        window.location.href = '/' + '#' + sectionId;
+    }
+}

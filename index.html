@@ -40,15 +40,27 @@ title: Início
   <div class="container">
     <h2>Artigos</h2>
     <div class="posts">
-      {% for artigo in site.artigos limit:3 %}
       <div class="post">
-        <img src="{{ artigo.image }}" alt="{{ artigo.title }}">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Ansiedade na era digital">
         <div class="info">
-          <h4>{{ artigo.title }}</h4>
-          <a href="{{ artigo.url }}" target="_blank">{{ artigo.link_text | default: "Ler mais" }}</a>
+          <h4>Ansiedade na era digital: como lidar com a sobrecarga de informações</h4>
+          <a href="/artigos/ansiedade-moderna">Ler mais</a>
         </div>
       </div>
-      {% endfor %}
+      <div class="post">
+        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80" alt="Autocuidado">
+        <div class="info">
+          <h4>Autocuidado: pequenos rituais para dias mais leves</h4>
+          <a href="/artigos/autocuidado-rotina">Ler mais</a>
+        </div>
+      </div>
+      <div class="post">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Limites saudáveis">
+        <div class="info">
+          <h4>Como estabelecer limites saudáveis sem se sentir culpado</h4>
+          <a href="/artigos/limites-saudaveis">Ler mais</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
