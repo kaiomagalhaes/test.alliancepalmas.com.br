@@ -3,35 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
-  <meta name="author" content="{{ site.author }}">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="{% if page.collection == 'artigos' %}article{% else %}website{% endif %}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}https://images.unsplash.com/photo-1496247749665-49cf5b1022e5?auto=format&fit=crop&w=1200&q=80{% endif %}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:locale" content="pt_BR">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
-  <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}https://images.unsplash.com/photo-1496247749665-49cf5b1022e5?auto=format&fit=crop&w=1200&q=80{% endif %}">
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   
   <!-- SEO Tag -->
   {% seo %}
+  
+  <!-- Additional Meta Tags -->
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pt-BR">
+  <meta name="geo.region" content="BR-GO">
+  <meta name="geo.placename" content="Goiânia">
+  <meta name="geo.position" content="-16.6864;-49.2653">
+  <meta name="ICBM" content="-16.6864, -49.2653">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -78,18 +68,24 @@
     {% if page.collection == 'artigos' %}
     "author": {
       "@type": "Person",
-      "name": "{{ site.author }}"
+      "name": "{{ site.author }}",
+      "url": "{{ site.url }}"
     },
     "publisher": {
       "@type": "Organization",
       "name": "{{ site.title }}",
+      "url": "{{ site.url }}",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ site.url }}/logo.png"
+        "url": "{{ site.url }}/assets/images/sheirla.jpg"
       }
     },
     "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "dateModified": "{{ page.last_modified_at | date_to_xmlschema | default: page.date | date_to_xmlschema }}"
+    "dateModified": "{{ page.last_modified_at | date_to_xmlschema | default: page.date | date_to_xmlschema }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    }
     {% else %}
     "address": {
       "@type": "PostalAddress",
@@ -102,27 +98,96 @@
     "priceRange": "$$",
     "openingHours": "Mo-Fr 09:00-18:00",
     "medicalSpecialty": "Psychotherapy",
+    "areaServed": {
+      "@type": "City",
+      "name": "Goiânia"
+    },
     "availableService": [
       {
         "@type": "MedicalTherapy",
-        "name": "Psicoterapia Individual"
+        "name": "Psicoterapia Individual Presencial",
+        "description": "Terapia individual presencial em Goiânia"
       },
       {
         "@type": "MedicalTherapy", 
-        "name": "Terapia Integrativa com Reiki"
+        "name": "Terapia Individual Online",
+        "description": "Terapia individual online via videochamada"
       },
       {
         "@type": "MedicalTherapy",
-        "name": "Terapia com Aromaterapia"
+        "name": "Terapia Integrativa com Reiki",
+        "description": "Terapia integrativa combinando psicoterapia e reiki"
       },
       {
         "@type": "MedicalTherapy",
-        "name": "Terapia com Florais de Bach"
+        "name": "Terapia com Aromaterapia",
+        "description": "Terapia utilizando óleos essenciais"
+      },
+      {
+        "@type": "MedicalTherapy",
+        "name": "Terapia com Florais de Bach",
+        "description": "Terapia utilizando florais de Bach"
       }
+    ],
+    "sameAs": [
+      "https://wa.me/5562985702884"
     ]
     {% endif %}
   }
   </script>
+  
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/assets/images/sheirla.jpg",
+    "description": "{{ site.description }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Goiânia",
+      "addressRegion": "GO",
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+5562985702884",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese"
+    },
+    "sameAs": [
+      "https://wa.me/5562985702884"
+    ]
+  }
+  </script>
+  
+  <!-- Breadcrumbs Schema -->
+  {% unless page.collection == 'artigos' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "{{ site.url }}"
+      }
+      {% if page.title and page.title != 'Início' %},
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ page.title }}",
+        "item": "{{ page.url | absolute_url }}"
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+  {% endunless %}
 </head>
 <body>
   {% include navigation.html %}
@@ -157,6 +222,17 @@
     {% for script in page.scripts %}
       <script src="{{ script | relative_url }}"></script>
     {% endfor %}
+  {% endif %}
+  
+  <!-- Google Analytics -->
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
   {% endif %}
 </body>
 </html> 

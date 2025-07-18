@@ -9,20 +9,20 @@ layout: null
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  {% for artigo in site.artigos %}
-  <url>
-    <loc>{{ site.url }}{{ artigo.url }}</loc>
-    <lastmod>{{ artigo.date | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  {% endfor %}
   {% for servico in site.servicos %}
   <url>
     <loc>{{ site.url }}{{ servico.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  {% endfor %}
+  {% for artigo in site.artigos %}
+  <url>
+    <loc>{{ site.url }}{{ artigo.url }}</loc>
+    <lastmod>{{ artigo.date | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   {% endfor %}
 </urlset> 

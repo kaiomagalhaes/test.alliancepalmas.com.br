@@ -4,11 +4,13 @@ email: contato@sheilamoraesterapeuta.com
 url: "https://kaiomagalhaes.github.io/sheilamoraesterapeuta.com"
 baseurl: ""
 author: "Sheila Moraes"
-keywords: "terapeuta goiânia, psicoterapia, reiki, aromaterapia, florais de bach, saúde mental, ansiedade, depressão, autocuidado, terapia online"
-google_analytics: ""
+keywords: "terapeuta goiânia, psicoterapia, reiki, aromaterapia, florais de bach, saúde mental, ansiedade, depressão, autocuidado, terapia online, psicólogo goiânia, terapia individual, terapia online"
+google_analytics: "G-XXXXXXXXXX"
 google_verification: ""
 facebook_app_id: ""
 twitter_username: ""
+lang: "pt-BR"
+timezone: "America/Sao_Paulo"
 
 # Build settings
 markdown: kramdown

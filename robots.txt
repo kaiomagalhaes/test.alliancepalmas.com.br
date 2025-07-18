@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sheilamoraesterapeuta.com/sitemap.xml
+Sitemap: https://kaiomagalhaes.github.io/sheilamoraesterapeuta.com/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /_site/
