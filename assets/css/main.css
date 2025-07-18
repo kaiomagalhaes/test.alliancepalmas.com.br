@@ -201,7 +201,7 @@ section .text-4xl.font-bold.text-indigo-900 {
 .mr-3 { margin-right: 0.75rem; }
 
 /* Footer specific styles */
-.bg-purple-700 { background-color: #7c3aed; }
+.bg-purple-700 { background-color: rgba(124, 58, 237, 0.8); }
 .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
 
 /* Icon styles for contact buttons */
@@ -212,14 +212,27 @@ section .text-4xl.font-bold.text-indigo-900 {
 
 /* Fix white line below text in contact buttons */
 section .py-20 a {
-  line-height: 1;
-  text-decoration: none;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 section .py-20 a span {
-  line-height: 1;
-  display: inline-block;
-  vertical-align: middle;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+/* Additional fix for any remaining white lines */
+section .py-20 a:hover,
+section .py-20 a:focus,
+section .py-20 a:active {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 /* Material Icons */
